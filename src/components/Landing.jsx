@@ -86,17 +86,16 @@ export function Landing() {
           <img
             src="/images/chatgpt.png"
             onClick={() => navigate("/Chatbot")}
-            className="w-16 h-16 cursor-pointer"
+            className="w-12 h-12 mr-5 cursor-pointer"
             alt="Chatbot"
           />
         </div>
-        <div className="max-w-6xl mx-auto space-y-12">
-          {/* Header */}
+        <div className= {`max-w-6xl mx-auto space-y-12 `}>          
+        {/* Header */}
           <div className="flex justify-between items-center">
             <h1
-              className="text-3xl font-bold text-pink-600 dark:text-pink-400 
-            "
-            >
+              className={`text-3xl font-bold text-pink-600 dark:text-pink-400  ${!sidebarVisible ? "ml-12" : ""}`}
+              >
               Welcome to SheSync
             </h1>
             {/* <button
